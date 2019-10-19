@@ -2,4 +2,133 @@
   width: 60px;
 }
 
+.products {
+  display: inline-flex;
+  height: 90vh;
+}
+
+.side-menu {
+  width: 10vw;
+  background-color: #9c7623;
+}
+
+.side-products {
+  height: 100%;
+  display: grid;
+  grid-template: repeat(5, 1fr)/1fr;
+  grid-template-areas: "p" "g" "c" "e" "t";
+  padding: 0;
+}
+.side-products li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid #444444;
+}
+.side-products li:hover {
+  background-color: #dfae44;
+}
+.side-products li a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+
+.p {
+  grid-area: p;
+}
+
+.g {
+  grid-area: g;
+}
+
+.c {
+  grid-area: c;
+}
+
+.e {
+  grid-area: e;
+}
+
+.t {
+  grid-area: t;
+}
+
+.cakesAndMore {
+  width: 90vw;
+  height: 100%;
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: "one two three" "four five six";
+  background-color: #97c1ce;
+}
+
+.cake {
+  width: 220px;
+  height: 200px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cake p {
+  text-align: center;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.image-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  width: 6em;
+  background-color: #dfae44;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+.button:hover {
+  background-color: #9c7623;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /*# sourceMappingURL=main.css.map */
