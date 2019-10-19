@@ -1,0 +1,126 @@
+.products {
+    display: inline-flex;
+    height: 90vh;
+}
+
+    // side-menu section
+
+    .side-menu {
+        width: 10vw;
+        background-color: $color-secondary;
+    }
+
+    .side-products {
+        height: 100%;
+        display: grid;
+        grid-template: repeat(5, 1fr) / 1fr;
+        grid-template-areas: "p" "g" "c" "e" "t";
+        padding: map-get($padding, none);
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            list-style: none;
+            cursor: pointer;
+            border-bottom: 1px solid $color-border;
+            &:hover{
+                background-color: $color-secondary-hover;
+            }
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+    }
+    
+    .part {
+    }
+
+    .p {
+        grid-area: p;
+    }
+    .g {
+        grid-area: g;
+    }
+    .c {
+        grid-area: c;
+    }
+    .e {
+        grid-area: e;
+    }
+    .t {
+        grid-area: t;
+    }
+
+    // side-menu section
+
+
+    // products-section
+
+    .cakesAndMore {
+        width: 100vw;
+        height: 100%;
+        padding: map-get($padding, large);
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: "one two three" "four five six";
+        background-color: $color-primary;
+    }
+    
+    .cake {
+        width: 220px;
+        height: 200px;
+        margin: map-get($margin, large);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            text-align: center;
+        }
+    }
+    .one {
+        grid-area: one;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three {
+        grid-area: three;
+    }
+    .four {
+        grid-area: four;
+    }
+    .five {
+        grid-area: five;
+    }
+    .six {
+        grid-area: six;
+    }
+    
+    .image-container {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .button {
+        width: 6em;
+        background-color: $color-btn;
+        border: none;
+        border-radius: 5px;
+        font-size: .8em;
+        &:hover {
+            background-color: $color-secondary;
+        }
+    }
+
+    // products-section

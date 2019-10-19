@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--load all styles -->
 
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-white">
+        <h1 class="display-4 ">Siguenos</h1>
+        <div class="icons-container">
+          <a href="#">
+            <img
+              class="icon-item"
+              src="/assets/images/facebook.png"
+              alt="facebook"
+              srcset=""
+            />
+          </a>
+          <a href="#">
+            <img
+              class="icon-item"
+              src="/assets/images/instagram.png"
+              alt="Instagram"
+              srcset=""
+            />
+          </a>
+          <a href="#">
+            <img
+              class="icon-item"
+              src="/assets/images/whatsapp.png"
+              alt="whatsapp"
+            />
+          </a>
+        </div>
+        <hr class="my-4" />
+        <h3 class="container-h3">Unete a la Comunidad</h3>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Registrate</a>
+
+        <div id="fb-root"></div>
+        <script
+          async
+          defer
+          crossorigin="anonymous"
+          src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0"
+        ></script>
+        <div
+          class="fb-comments"
+          data-href="https://www.facebook.com/CarolaCakePastry/"
+          data-width="50%"
+          data-numposts="5"
+        ></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
@@ -21,6 +104,108 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info py-1">
+    <a class="navbar-brand" href="#">
+        <img src="https://i.pinimg.com/originals/b0/e1/f4/b0e1f4a7ee2c6d7a14df581bb60343be.png" style="width: 60px;" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-5">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+            </a>
+            <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="#">Pasteles</a>
+            <a class="dropdown-item text-light" href="#">Galletas</a>
+            <a class="dropdown-item text-light" href="#">Cupcakes</a>
+            <a class="dropdown-item text-light" href="#">Especiales</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Personaliza tu pastel</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </div>
+    </nav>
+
+    <!-- products-section -->
+
+        <section class="products">
+            <side class="side-menu">
+                <ul class="side-products">
+                    <li class="part p"><a href="">Pasteles</a></li>
+                    <li class="part g"><a href="" >Galletas</a></li>
+                    <li class="part c"><a href="" >Cupcakes</a></li>
+                    <li class="part e"><a href="" >Especiales</a></li>
+                    <li class="part t"><a href="" >Temporada</a></li>
+                </ul>
+            </side>
+            <article class="cakesAndMore">
+                <div class="cake one">
+                    <figure class="image-container">
+                        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/73472658_1659396130858208_8892725225112731648_n.jpg?_nc_cat=109&_nc_oc=AQmazWFCFIcqjHFzbGk9WejhT8MoMJdSYHueZpsoLse_82PdIki0_jTs3vyeHFgSXkM&_nc_ht=scontent-dfw5-2.xx&oh=ad6d7a419002ba6a38318a2f31d746d1&oe=5E2AF4D2" alt="">
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    <button class="button">Ver</button>
+                </div>
+                <div class="cake two">
+                    <figure class="image-container">
+                        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/71468415_1643567622441059_6126021431785422848_n.jpg?_nc_cat=107&_nc_oc=AQl7HT5fincXWWE0McGMqADiNZtI-WwRq6ioVXQ5g_bqiiPwM92d8v1BjfZe5HuhqD8&_nc_ht=scontent-dfw5-2.xx&oh=23ee9bceda48f377b01e78c81782bc2d&oe=5E272949" alt="">
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    <button class="button">Ver</button>
+                </div>
+                <div class="cake three">
+                    <figure class="image-container">
+                        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/69978316_1622103024587519_8118952030258593792_n.jpg?_nc_cat=107&_nc_oc=AQl4LhlSCBJORvcCy3DUI-Flqfct0zVse04q71zwa4YFvAfpN-2w2ADzYLK5_0WWVXg&_nc_ht=scontent-dfw5-2.xx&oh=f0770ac091db352695aeaff08b2591cc&oe=5E27DBA3" alt="">
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    <button class="button">Ver</button>
+                </div>
+                <div class="cake four">
+                    <figure class="image-container">
+                        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/69642185_1622979007833254_4263754308371087360_n.jpg?_nc_cat=106&_nc_oc=AQkIpRHqFZWfmolpK1hfHLSGi_tw7xsesSzShXtHBhS6xYDk9l4sc_3yGNjkp_dAlQI&_nc_ht=scontent-dfw5-2.xx&oh=ccba9279151844d524ce43dcdf0fc7b5&oe=5E17E21A" alt="">
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    <button class="button">Ver</button>
+                </div>
+                <div class="cake five">
+                    <figure class="image-container">
+                        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/70176486_1622979214499900_1408494001706762240_n.jpg?_nc_cat=103&_nc_oc=AQk8XQGvdj9tVteBwPNj-lQIIkfIt9a6j4Dd2FCaSntMMYlOdjfkwHK3PcOc1AXOVnY&_nc_ht=scontent-dfw5-2.xx&oh=0eef4ba8cb455ae8f5d61add42e4ad05&oe=5E5DF372" alt="">
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    <button class="button">Ver</button>
+                </div>
+                <div class="cake six">
+                    <figure class="image-container">
+                        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/69957357_1624650377666117_423213265460396032_n.jpg?_nc_cat=108&_nc_oc=AQkayifCvvUI6bYOE-DzSh0Dswrn7rpHy5cVbNha_CV1THPHiOsyVwXURMCG5V3ol8M&_nc_ht=scontent-dfw5-2.xx&oh=829a31962fcb2b18b3ead78c4bd642b1&oe=5E6065E7" alt="">
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    <button class="button">Ver</button>
+                </div>
+            </article>
+        </section>
+
+    <!-- products-section -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
 
     <div class="row">
         <div class="col-4">
