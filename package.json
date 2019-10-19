@@ -1,0 +1,22 @@
+{
+  "name": "cakeshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepeps/ProyectBedu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pepeps/ProyectBedu/issues"
+  },
+  "homepage": "https://github.com/pepeps/ProyectBedu#readme",
+  "dependencies": {
+    "sass": "^1.23.0"
+  }
+}
