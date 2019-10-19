@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+
+    .side-menu {
+        display: none;
+    }
+
+    .cakesAndMore {
+        grid-template: repeat(1, auto);
+    }
+}

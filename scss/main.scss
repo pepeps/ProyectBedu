@@ -1,7 +1,10 @@
-@import "variables";
-@import "logo";
-@import "products";
+@import "_variables";
+@import "_logo";
+@import "_products";
+@import "_queries";
+
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }

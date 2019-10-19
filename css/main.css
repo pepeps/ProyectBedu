@@ -57,7 +57,7 @@
 }
 
 .cakesAndMore {
-  width: 90vw;
+  width: 100vw;
   height: 100%;
   padding: 30px;
   display: grid;
@@ -127,8 +127,18 @@
   background-color: #9c7623;
 }
 
+@media screen and (max-width: 600px) {
+  .side-menu {
+    display: none;
+  }
+
+  .cakesAndMore {
+    grid-template: repeat(1, auto);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
