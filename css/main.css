@@ -127,6 +127,37 @@
   background-color: #9c7623;
 }
 
+.jumbotron {
+  width: 100%;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.container .icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.container-h3 {
+  text-align: center;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-item:hover {
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .side-menu {
     display: none;
